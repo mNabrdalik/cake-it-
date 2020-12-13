@@ -1,0 +1,172 @@
+.sidebar {
+  width: 40%;
+}
+
+.sidebar ul a {
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+
+label #btn {
+  width: 80px;
+  height: 80px;
+  left: 25px;
+  top: 20px;
+}
+
+label #btn i {
+  margin-top: 8px;
+  font-size: 36px;
+}
+
+label #cancel {
+  left: -25vw;
+  top: 10px;
+  font-size: 32px;
+}
+
+#check:checked ~ label #cancel {
+  left: 32vw;
+}
+
+.home-txt {
+  left: 65%;
+  -webkit-transform: translate(-50%, -65%);
+          transform: translate(-50%, -65%);
+}
+
+.home-txt h1 {
+  font-size: 48px;
+}
+
+.home-txt p {
+  font-size: 24px;
+}
+
+.carousel .fas {
+  bottom: 80px;
+  right: 60px;
+  font-size: 50px;
+}
+
+.jumbotron .section-title h3 {
+  padding: 35px;
+  font-size: 30px;
+}
+
+.jumbotron h4 {
+  font-size: 26px;
+}
+
+.jumbotron p {
+  font-size: 24px;
+  text-align: center;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.jumbotron .txt-r {
+  text-align: center;
+}
+
+.jumbotron i {
+  font-size: 48px;
+  margin: 20px 10px;
+}
+
+.jumbotron .space {
+  padding-bottom: 40px;
+}
+
+.jumbotron .btn-primary {
+  width: 220px;
+  font-size: 26px;
+}
+
+.sample-cakes {
+  width: 60%;
+}
+
+.about-company img {
+  max-width: 350px;
+}
+
+.about-company p {
+  max-width: 300px;
+  padding: 15px;
+  font-size: 22px;
+}
+
+.bg-img .content-box {
+  min-width: 420px;
+  height: 450px;
+}
+
+.bg-img .content-box p {
+  font-size: 22px;
+}
+
+.bg-img .content-box i {
+  font-size: 42px;
+}
+
+.catalog-spy h2 {
+  font-size: 36px;
+}
+
+.catalog-spy nav a {
+  font-size: 24px;
+  padding: 20px;
+}
+
+.mt {
+  margin-top: 165px;
+}
+
+.container .box {
+  margin-bottom: 40px;
+}
+
+p.on-mobile {
+  font-size: 16px;
+}
+
+p.about-comp {
+  margin-right: 50px;
+  margin-left: 50px;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.contact i {
+  font-size: 38px;
+}
+
+#shop01 {
+  margin: 25px 75px;
+}
+
+#shop02 {
+  margin: 25px 75px;
+}
+
+#shop03 {
+  margin: 25px 75px;
+}
+
+footer p {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 610px) {
+  .sidebar ul a {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .container {
+    max-width: 700px;
+  }
+}
+/*# sourceMappingURL=small.css.map */

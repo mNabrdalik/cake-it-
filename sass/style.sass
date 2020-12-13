@@ -1,0 +1,562 @@
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+$white-color: #F6F6F6
+$pink-color: #f3d2d2 
+$black-color: #222
+$purple-color: #525072be
+$soft-txt-shadow: 1px 1px 3px #555
+
+html
+    scroll-behavior: smooth
+
+body
+    font-family: 'Poppins', sans-serif
+    background-color: $white-color
+    color: $black-color
+    position: relative
+
+.brand
+    position: fixed
+    left: 50%
+    transform: translateX(-50%);
+    margin-top: 10px
+    font-weight: bold
+    letter-spacing: 3px
+    text-align: center
+    flex-grow: 4
+    color: $purple-color
+    text-decoration: underline $white-color 3px
+    z-index: 999 
+
+//NAV
+nav
+    label
+        display: inline    
+
+.sidebar    
+    position: fixed
+    top: 0
+    left: -100%
+    width: 100%
+    height: 100%
+    background-color: $purple-color
+    transition: all .5s ease
+    z-index: 20
+
+    h2
+        margin-top: 25px
+        padding-left: 10px
+        font-weight: bold
+        letter-spacing: 3px
+        color: #ffaeae
+        text-decoration: underline $white-color 3px
+        
+    ul 
+        a
+            display: block
+            height: 100%
+            width: 100%
+            line-height: 25px
+            padding-left: 15px
+            text-transform: uppercase
+            color: $white-color
+            letter-spacing: 2px
+            text-decoration: none
+            transition: all .4s ease-in
+
+        li:hover 
+            a
+                padding-left: 25px
+                color: #ffaeae
+                  
+#check
+    display: none    
+
+label #btn, label #cancel
+    position: absolute
+    cursor: pointer
+    color: $white-color
+
+label #btn
+    position: fixed
+    top: 10px
+    left: 15px 
+    width: 60px
+    height: 60px    
+    padding: 15px 15px
+    font-size: 32px
+    color: $white-color
+    background-color: $purple-color
+    border-radius: 50%
+    transition: all .5s ease
+    z-index: 999
+
+    i
+        display: flex
+        justify-content: center
+        align-items: center
+
+p#btn
+    box-shadow: 3px 3px 5px black
+
+label #cancel
+    position: fixed
+    top: 17px   
+    left: -85vw
+    padding: 10px 10px
+    font-size: 32px
+    color: $white-color
+    z-index: 1111
+    transition: all .5s
+
+#check:checked~ .sidebar
+    left: 0
+
+#check:checked~ label #btn
+    left: 250px
+    opacity: 0
+    pointer-events: none
+
+#check:checked~ label #cancel
+    left: 85vw
+
+//SCROLLSPY
+
+.spy-scroll
+    position: fixed
+    top: 25%
+    right: 10px  
+    display: flex
+    flex-direction: column 
+    z-index: 999
+
+    a
+        color: $purple-color
+        font-size: 20px
+
+    .h-line
+        margin: 3px auto 
+        width: 2px
+        height: 25px
+        background-color: $black-color
+
+.spy-scroll a:hover,
+    color: $pink-color  
+
+.nav-pills .nav-link.active
+    color: $white-color
+    background-color: $purple-color
+    border-radius: 25% 
+    box-shadow: $soft-txt-shadow
+
+//HOME            
+
+.bg-home-1
+    background: url("../img/header01-r.jpg") center no-repeat
+    background-size: cover
+    
+.bg-home-2
+    background: url("../img/header02-r.jpg") center no-repeat
+    background-size: cover
+
+.bg-home-3
+    background: url("../img/header03-r.jpg") center no-repeat
+    background-size: cover    
+
+.home-txt
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    text-shadow: 5px 5px 5px #000
+
+    h1  
+        color: #ffaeae
+        font-weight: bold
+        z-index: 1
+        font-size: 38px
+  
+    p
+        display: block 
+        color:  $white-color
+        text-align: right
+        
+.carousel
+    .fas
+        position: absolute
+        bottom: 60px
+        right: 25px
+        font-size: 40px
+        color: #ffaeae
+        text-shadow: 3px 3px 5px #000
+        transition: color .4s ease-out, transform .8s
+
+    .fas:hover
+        color: $white-color
+        transform: scale(1.2)  
+    
+//MAIN
+
+.jumbotron
+    margin: 0
+    padding: 0
+    text-align: center  
+    background-color: $white-color
+    font-size: 20px
+    color: $black-color
+
+    .section-title
+        h3
+            padding: 25px 
+            text-align: center 
+            background-color: $pink-color
+            font-weight: bold
+            font-size: 26px
+            text-transform: uppercase
+            letter-spacing: 2px
+            color: $white-color
+            text-shadow: $soft-txt-shadow
+            
+    h4
+        text-transform: uppercase
+        font-size: 22px
+        letter-spacing: 3px
+        margin: 25px 15% 5px
+
+    .underline
+        margin: 0 auto 20px
+        width: 100px
+        height: 4px
+        background-color: $purple-color
+
+    p
+        margin: 10px 30px
+        text-align: left
+        text-transform: uppercase
+          
+        span
+            color: $purple-color
+            font-weight: bold
+
+        a
+            color: $black-color
+            transition: font-weight .4s linear
+            
+        a:hover
+            font-weight: bold
+            text-decoration: none
+
+    .txt-r
+        text-align: right
+
+    i
+        font-size: 40px
+        margin: 15px 5px
+        color: $pink-color 
+        text-shadow: $soft-txt-shadow
+
+    .fa-arrow-right
+        font-size: 32px    
+        margin: 0 20px
+
+    .space
+        padding-bottom: 30px
+
+    .btn-primary
+        position: relative
+        width: 160px
+        margin: 20px 0px 35px
+        text-align: center
+        background-color: $purple-color
+        color: $white-color
+        border: none
+        font-size: 24px
+        box-shadow: 3px 3px 5px $black-color
+        transition: all .6s linear
+
+    .btn-primary:hover
+        background-color: $pink-color
+        color: $black-color
+
+//SAMPLE PRODUCTS
+.sample-cakes
+    left: 50%
+    transform: translateX(-50%)
+    width: 80%
+
+    .carousel-caption
+        position: absolute
+        width: 100%
+            
+        p
+            background-color: rgba(0, 0, 0, .7)
+            margin: 0 30px
+            text-align: center
+
+//BRIEF ABOUT US   
+.about-company
+    
+    img
+        position: relative
+        max-width: 225px
+        margin-right: 5px
+        margin-bottom: 15px
+        left: 50px
+        right: 25%
+        box-shadow: $soft-txt-shadow 
+
+    p
+        position: relative
+        margin-bottom: 15px
+        max-width: 250px
+        text-align: justify
+        text-transform: none
+        background-color: $pink-color
+        font-size: 16px
+        padding: 10px
+        color: $black-color
+        box-shadow: $soft-txt-shadow
+
+//HOW TO CONTACT
+.bg-img
+    height: 90vh
+    background: url("../img/contact.jpg") center no-repeat
+    background-size: cover
+
+    .content-box
+        position: relative
+        width: 300px
+        height: 350px
+        top: 5vh
+        left: 50%
+        transform: translateX(-50%)
+        background-color: $purple-color
+        box-shadow: 5px 5px 5px #000  
+        color: $white-color 
+
+        h4
+            padding-top: 10px
+
+        .pink
+            background-color: $pink-color
+
+        p
+            text-transform: uppercase
+            text-align: center
+            font-size: 18px
+            margin-bottom: 10px
+
+        p.mail
+            text-transform: none 
+
+        i
+            font-size: 36px  
+            transition: color .5s ease-in  
+
+        i:hover
+            color: $white-color
+
+
+//CAKE-CATALOG (SUBPAGE)    
+.catalog-spy
+    position: fixed
+    top: 0
+    width: 100%
+    background-color: $pink-color
+    text-align: center
+    z-index: 10
+    text-shadow: $soft-txt-shadow
+
+    h2
+        top: 0
+        margin-top: 10px
+        margin-left: 25px
+        text-align: center
+        color: $white-color
+        font-weight: bold
+        letter-spacing: 3px
+
+    nav
+        display: flex
+        justify-content: space-around
+        align-items: center
+
+        a
+            width: 100%
+            color:  $white-color
+            text-decoration: none
+            padding: 10px 20px
+            font-size: 18px
+            transition: background-color .4s
+
+        a.active
+            background-color: $purple-color  
+
+p.on-mobile
+    font-size: 14px
+    text-align: center
+    font-style: italic
+
+.mt
+    margin-top: 120px
+
+.container
+    display: flex
+    width: 100%
+    justify-content: center
+    align-items: center
+    flex-wrap: wrap
+
+    .box
+        position: relative
+        display: flex
+        width: 250px
+        height: 250px
+        margin: 30px
+
+        .imgBox
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            transition: transform .5s
+            z-index: 2
+
+            img
+                position: absolute
+                top: 0
+                left: 0
+                width: 100%
+                height: 100%
+                object-fit: cover
+
+        .img-description
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background-color: $purple-color
+            z-index: 1
+            display: flex
+            justify-content: center
+            align-items: flex-end
+            padding: 15px
+            transition: transform .5s
+
+            h6
+                font-size: 18px
+                color: $white-color
+                line-height: 20px
+                letter-spacing: 2px
+                text-align: center
+
+                span
+                    font-size: 16px
+                    letter-spacing: 1px
+
+.container .box:hover .imgBox
+    transform: translate(-35px,-35px)       
+
+.container .box:hover .img-description
+    transform: translate(35px,35px)      
+
+//PLACE-AN-ORDER
+
+.order
+    color: $purple-color
+    letter-spacing: 1px
+    font-weight: bold
+
+.form-check-label
+    font-weight: normal 
+    letter-spacing: normal  
+    text-align: justify
+    font-size: 16px
+
+//ABOUT-COMPANY
+p.about-comp
+    text-transform: capitalize
+    text-align: justify
+    font-size: 16px
+    margin-bottom: 15px
+
+.photo
+    width: 80vw    
+
+figcaption
+    margin-top: 10px
+    font-size: 14px
+
+//CONTACT
+.contact 
+
+    h5
+        padding-top: 20px
+        font-size: 20px
+        color: $white-color
+        text-decoration: underline $pink-color 3px 
+        text-shadow: $soft-txt-shadow
+
+    p
+        text-align: center
+        text-transform: none
+        font-size: 16px
+        color: $white-color
+        text-shadow: $soft-txt-shadow
+
+    i
+        font-size: 32px    
+
+//CONTACT    
+#shop01
+    background: url("../img/shops/shop-01-dark.jpg") no-repeat center
+    margin: 25px
+
+#shop02
+    background: url("../img/shops/shop-02-dark.jpg") no-repeat center
+    margin: 25px
+
+#shop03
+    background: url("../img/shops/shop-03-dark.jpg") no-repeat center
+    margin: 25px 25px 50px
+
+
+//FOOTER                
+footer 
+    p
+        font-size: 14px
+        margin-top: 15px
+        margin-bottom: 8px     
+        text-align: center  
+        color: $purple-color   
+               
+@media screen and ( max-width:  340px)
+    .bg-img .content-box p.mail
+        font-size: 16px
+                       
+@media screen and ( min-width:  400px)
+    .jumbotron
+        p
+            margin-right: 10vw
+            margin-left: 10vw
+
+    .about-company
+        img
+            margin-left: 10vw
+        p
+            margin-left: 15vw    
+   
+@media screen and ( max-width: 768px)
+    #navbar-example3
+        display: none
+
+    .container .box:hover .imgBox
+        transform: translate(0px,-35px)       
+
+    .container .box:hover .img-description
+        transform: translate(0px,35px)  

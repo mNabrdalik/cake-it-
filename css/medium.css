@@ -1,0 +1,111 @@
+.sidebar {
+  width: 40%;
+}
+
+.sidebar h2 {
+  font-size: 36px;
+}
+
+.sidebar ul a {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+label #cancel {
+  left: -30vw;
+  top: 10px;
+  font-size: 36px;
+}
+
+.home-txt h1 {
+  font-size: 50px;
+}
+
+.jumbotron h4 {
+  font-size: 28px;
+}
+
+.jumbotron p {
+  margin-right: 15vw;
+  margin-left: 15vw;
+}
+
+.sample-cakes {
+  width: 50%;
+}
+
+.about-company img {
+  max-width: 500px;
+}
+
+.about-company p {
+  max-width: 450px;
+  padding: 15px;
+  font-size: 22px;
+}
+
+.bg-img {
+  height: 100vh;
+}
+
+.bg-img .content-box {
+  min-width: 464px;
+  height: 420px;
+}
+
+.bg-img .content-box p {
+  font-size: 22px;
+  margin: 10px 50px;
+}
+
+.bg-img .content-box i {
+  font-size: 42px;
+}
+
+.catalog-spy h2 {
+  font-size: 38px;
+}
+
+.container .box {
+  margin: 35px;
+}
+
+p.on-mobile {
+  font-size: 16px;
+}
+
+p.about-comp {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.photo {
+  width: 50vw;
+}
+
+figcaption {
+  font-size: 16px;
+}
+
+.contact i {
+  font-size: 38px;
+}
+
+#shop01 {
+  margin: 25px 125px;
+}
+
+#shop02 {
+  margin: 25px 125px;
+}
+
+#shop03 {
+  margin: 25px 125px;
+}
+
+@media screen and (min-width: 780px) {
+  p.on-mobile {
+    display: none;
+  }
+}
+/*# sourceMappingURL=medium.css.map */
